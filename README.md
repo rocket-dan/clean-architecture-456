@@ -3,7 +3,9 @@ Study history of clean architecture
 
 ## Book
 <img src="http://image.yes24.com/goods/77283734/XL" width="200">
+
 http://www.yes24.com/Product/Goods/77283734
+
 https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/
 
 ## Schedule
