@@ -9,7 +9,7 @@ http://www.yes24.com/Product/Goods/77283734
 https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/
 
 ## Schedule
-Every Sat 9PM KST
+Every Sat 9PM KST (CEST 2PM)
 
 ## History
 |Date|Content|Done|
