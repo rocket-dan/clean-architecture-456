@@ -12,7 +12,8 @@ https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/
 Every Sat 9PM KST (CEST 2PM)
 
 ## History
-|Date|Content|Done|
-|----|-------|----|
-|2021.10.02|1부 소개 (PART I Introduction)|✅|
-|2021.10.09|2부 벽돌부터 시작하기: 프로그래밍 패러다임 (PART II Starting with the Bricks: Programming Paradigms)|☑️|
+|Date|Content|Done|Speaker|
+|----|-------|----|-------|
+|2021.10.02|1부 소개 (PART I Introduction)|✅|joos|
+|2021.10.09|2부 벽돌부터 시작하기: 프로그래밍 패러다임 (PART II Starting with the Bricks: Programming Paradigms)|✅|zeze|
+|2021.10.16|3부 설계 원칙 (PART III Design Principles)|☑️|myau|
