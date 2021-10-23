@@ -1,3 +1,4 @@
+
 # 4. Component principle
 
 SOLID 에서 한 것 : 어떻게 이 벽돌을 잘 조합해서 벽이랑 방을 만들까?!
@@ -76,4 +77,76 @@ Don't depend on things you don't need.
 이 세 가지 규칙의 다이어그램에서 현재 상황에 맞춰 잘 조정해 나가되, 계속 변화하는 상황에도 귀를 기울여야 한다.
 
 ## 14. Component Coupling
+
+There are three principles regarding the relationships between components:
+● ADP: Acyclic Dependencies Principle
+● SDP: Stable Dependencies Principle
+● SAP: Stable Abstractions Principle
+
+
+#### 1. The Acyclic Dependencies Principle
+
+- [ ] the morning after syndrome : 어제까지만 해도 잘되던게 갑자기 안돼서 아놔 ㅅㅂ 뭐야? 하고 보니 누가 뭐 하나를 바꿔서 그거에 의존하는 모든 게 갑자기 안되기 시작하는 일
+
+어떻게 방지하냐면 1. weekly build 이랑 2. Acyclic Dependencies Principle (ADP).
+
+a. The Weekly Build
+
+Usually used in medium-sized projects. Developers work the first four days of the week, ignoring the others. Without any integration concerns, they develop the code as if the code will run independently. After four days, on Friday, all changes and the system are integrated.
+
+Although this approach provides a great advantage for the first four days, the fifth day causes a serious problem.
+
+ As the project grows, the cost of integration increases and the burden on other days begins. As integration decreases, so does the efficiency of the development team
+
+b. Eliminating Dependency Cycles
+
+This problem can be resolved by dividing the development environment into releasable components. These components become the work of a developer or a team and can be made available to other developers.
+
+릴리즈 할 때마다 타팀들도 그 릴리즈 적용할 시간 필요
+
+However, each change made to a component may not be critical to other teams. It is a decision of the team to decide whether the work will be adjusted according to the new release.
+
+Typical component diagram
+
+directed acyclic graph로도 불림 (사진어케넣음 ㅋㅋ
+
+c. Breaking the Cycle
+
+  - [ ] By applying DIP, an interface between Entities and Authorizer can be placed and the connection can be reversed.
+
+Inverting the dependency between Entities and Authorizer
+A component to which Entites and Authorizer components are dependent can be created. This is usually applied when a temporary solution is required. Creating new components means that the dependency structure will also grow.
+
+The new component that both Entities and Authorizer depend on
+
+#### 2. Top-Down Design
+
+the component structure cannot be designed from top to bottom
+Component structure is not one of the first things to be done when designing the system, it should develop according to the growth and change of the system.
+
+시작부터 디자인 끝 땅땅 하기 어렵고, The changes are localized as much as possible in a specific region, and can be achieved by having the class distributions of the components where regional changes can be made by giving importance to SRP and CCP.
+
+As application begins to grow, reusable element formation becomes a concern. 
+At this point, components are started to be combined using CRP.
+The loops resulting from this process are also broken using ADP and component dependency is eliminated, but the graph is growing.
+
+디자인 없이는 디펜던시랑 재사용  가능한 부분을 찾아내기 힘들 수 밖에 없음.
+
+#### 3. The Stable Dependencies Principle
+
+The design cannot be completely static.
+To be a sustainable design, it needs to be a little volatility.
+
+At the same time, it is necessary to make sure that these temporary components are not dependent on the components that are difficult to change.
+Failure to meet this requirement makes it very difficult to change the component, which is designed to be susceptible to change. Therefore, it can be ensured that such dependence does not occur by using the Stable Dependencies Principle (SDP).
+
+Stability - 많은 의존도가 있을 때 컴포넌트를 바꾸기는 어려울 수 밖에 없음. 변ㄴ경하기 위해서는 의존하는 모든 객체도 신경써야 하기 때문에. 반대로 의존도가 높은 컴포넌트를 stable하다고 생각할수도 있고.
+
+#### 4. The Stable Abstraction Principle
+
+어떤건 자주 안 바뀌는 경우도 있음(ex- high-level architecture and policy decisions)
+However, this makes architecture inflexible.
+
+In such cases, by applying OCP, it is possible to create flexible and non-modification classes with the help of Abstract classes.
+Stable Abstraction Principle (SAP) provides a relationship between stability and abstractness. On the one hand, it says that the stable component should be abstact, so it doesn’t prevent it from being extended, on the other hand, it says that the unstable component must be concrete and unstable, and also that concrete code should be easily modified.
 
