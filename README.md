@@ -18,4 +18,5 @@ Every Sat 9PM KST (CEST 2PM)
 |2021.10.09|2부 벽돌부터 시작하기: 프로그래밍 패러다임 (PART II Starting with the Bricks: Programming Paradigms)|✅|zeze|
 |2021.10.16|3부 설계 원칙 (PART III Design Principles)|✅|myau|
 |2021.10.23|4부 컴포넌트 원칙 (PART IV Component Principles)|✅|hero|
-|2021.10.30|5부 아키텍처 ~ 18장 (PART V Architecture)|☑️|zeze|
+|2021.10.30|5부 아키텍처 ~ 18장 (PART V Architecture)|✅|zeze|
+|2021.11.06|5부 아키텍처 19장 ~ 24장 (PART V Architecture)|☑️|joos|
