@@ -20,4 +20,5 @@ Every Sat 9PM KST (CEST 2PM)
 |2021.10.23|4부 컴포넌트 원칙 (PART IV Component Principles)|✅|hero|
 |2021.10.30|5부 아키텍처 ~ 18장 (PART V Architecture)|✅|zeze|
 |2021.11.06|5부 아키텍처 19장 ~ 24장 (PART V Architecture)|✅|joos|
-|2021.11.13|5부 아키텍처 25장 ~ 29장 (PART V Architecture)|☑️|james|
+|2021.11.13|5부 아키텍처 25장 ~ 29장 (PART V Architecture)|✅|james|
+|2021.11.20|6부 아키텍처 30장 ~ 34장 (PART VI Architecture)|✅|joos|
